@@ -1,4 +1,8 @@
 :root {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -11,8 +15,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  display: flex;
 }
 
 a {
@@ -25,11 +27,12 @@ a:hover {
 }
 
 body {
-  margin: 0;
   display: flex;
+  margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  justify-content: start;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -80,12 +83,34 @@ button:focus-visible {
 
 .move-button {
   margin-top: 5px;
+  padding: 10px;
   margin-bottom: 5px;
   display: flex;
-  height: 40px;
   width: fit-content;
-  justify-self: start;
-  align-self: flex-start;
+  height: fit-content;
+  /* justify-self: start; */
+  /* align-self: center; */
+  /* align-items: center; */
+}
+
+.game {
+  display: flex;
+  justify-self: center;
+}
+
+.status {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.game-info {
+  max-width: 500px;
+}
+
+.ol-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 /* @media (prefers-color-scheme: light) {
