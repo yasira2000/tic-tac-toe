@@ -78,6 +78,16 @@ button:focus-visible {
   align-items: center;
 }
 
+.move-button {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  height: 40px;
+  width: fit-content;
+  justify-self: start;
+  align-self: flex-start;
+}
+
 /* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
